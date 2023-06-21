@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;800&display=swap');
+
+*{box-sizing: border-box;}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    background-color: hsl(204, 43%, 93%);
+    text-align: start;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+.header {
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px 0px 0px 50px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.header h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 600;
+}
+
+.header h2 {
+    color: #BFDF32;
+    font-weight: 600;
+}
+
+.header p {
+    color: hsl(218, 22%, 67%)
+}
+
+.subscription {
+    background-color: #2BB3B1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 20px 0px 0px 50px;
+    border-radius: 0px 0px 0px 10px;
+    width: 400px;
+}
+
+.subscription .wrapper {
+    align-items: center;
+    padding: 20px 0px 50px 0px;
+}
+
+.subscription h2 {
+    font-weight: 600;
+}
+
+.subscription h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: inherit;
+}
+
+.subscription span {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: hsl(204, 43%, 93%);
+    padding: 0px 0px 0px 5px;
+}
+
+.subscription p {
+    margin: inherit;
+    padding: 10px 0px 0px 0px;
+}
+
+.subscription a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: #BFDF32;
+    padding: 20px 115px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.description {
+    background-color: #4ABEBD;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 40px 0px 0px 50px;
+    border-radius: 0px 0px 10px 0px;
+    width: 400px;
+}
+
+.description h2 {
+    font-weight: 600;
+}
+
+@media(max-width: 850px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: fit-content;
+    }
+
+    .header {
+        height: 300px;
+        padding: 10px 10px 20px 40px;
+    }
+
+    .subscription {
+        height: 300px;
+        padding: 10px 10px 20px 40px;
+        border-radius: 0px;
+    }
+
+    .description {
+        height: 300px;
+        padding: 10px 10px 20px 40px;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
